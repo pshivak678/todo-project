@@ -1,0 +1,73 @@
+@font-face {
+    font-family:myfont1 ;
+    src: url(myfont.ttf);
+}
+body{
+    margin: 0;
+}
+
+.main-div{
+    font-family: 'myfont1';
+    background-color: #658864;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 100fr 100fr 100fr;
+    grid-template-rows: repeat(3,12.5em);
+}
+
+.leftpanel{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    text-align: start;
+    font-size: 2em;
+    padding-left: 1em;
+    padding-top: 1em;
+    background-color: #DDDDDD;
+    gap:10px;
+}
+
+.todoheading{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 2em;
+    text-align: center;
+    background-color:#B7B78A;
+    padding-top: 1em;
+}
+
+.addlist{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-template-columns: max-content;
+    font-size: 2em;
+    padding-top: 1EM;
+    background-color: #DDDDDD;
+    text-align: center;
+}
+
+.material-symbols-outlined{
+    background-color: #B7B78A;
+}
+
+.newnotes{
+    display: none;
+    grid-template-rows: auto auto auto auto auto;
+    gap:10px;
+}
+
+.addicon,.submiticon,.dropdownicn,.addproject{
+    cursor: pointer;
+}
+
+.titlebar{
+    display:grid;
+    grid-template-columns: auto auto;
+    flex-direction: row;
+    gap:25px;
+}
